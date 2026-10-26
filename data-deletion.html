@@ -1,69 +1,239 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Data Deletion — WHO'S THE IMPOSTOR?</title>
-  <meta name="description" content="User Data Deletion instructions for WHO'S THE IMPOSTOR? by Questara Interactive.">
+  <title>User Data Deletion Instructions - WHO'S THE IMPOSTOR?</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      color: #202938;
-      background: #f3f6fa;
-      margin: 0;
-      padding: 24px 16px;
+    :root {
+      --primary-color: #2563eb;
+      --primary-hover: #1d4ed8;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-color: #e2e8f0;
+      --warning-bg: #fffbebf8;
+      --warning-border: #fef08a;
+      --warning-text: #854d0e;
     }
-    main {
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 20px 16px;
+    }
+
+    .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 32px;
-      background: #ffffff;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+
+    .app-badge {
+      display: inline-block;
+      background-color: #dbeafe;
+      color: var(--primary-color);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .meta-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    ol, ul {
+      margin-bottom: 12px;
+      padding-left: 20px;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .warning-box {
+      background-color: var(--warning-bg);
+      border: 1px solid var(--warning-border);
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      padding: 16px;
+      margin-bottom: 16px;
+      color: var(--warning-text);
+      font-size: 0.95rem;
     }
-    h1, h2 { color: #172554; line-height: 1.3; }
-    h1 { font-size: 28px; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    a { color: #2457c5; }
-    .updated { color: #64748b; font-size: 14px; }
+
+    .warning-box strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background-color: #f1f5f9;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 12px;
+    }
+
     footer {
-      margin-top: 32px;
-      padding-top: 16px;
-      border-top: 1px solid #e2e8f0;
-      color: #64748b;
-      font-size: 14px;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
     }
-    @media (max-width: 480px) {
-      main { padding: 22px 18px; }
-      h1 { font-size: 24px; }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 12px 8px;
+      }
+
+      .container {
+        padding: 24px 16px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>User Data Deletion</h1>
-    <p><strong>WHO'S THE IMPOSTOR?</strong></p>
-    <p class="updated">Last updated: October 26, 2026</p><p>This page explains how players can remove gameplay data associated with WHO'S THE IMPOSTOR?, developed by Questara Interactive.</p>
 
-<h2>1. Data Stored by the Developer</h2>
-<p>The developer does not operate its own game server or database to store players' gameplay progress or scores. The game may store progress or scores locally on the player's device.</p>
+  <div class="container">
+    <header>
+      <span class="app-badge">WHO'S THE IMPOSTOR?</span>
+      <h1>User Data Deletion Instructions</h1>
+      <p class="meta-info">Developer: <strong>Questara Interactive</strong> | Last Updated: October 26, 2026</p>
+    </header>
 
-<h2>2. How to Delete Local Game Data</h2>
-<p>To remove locally stored game data, players can clear the relevant browser or game-environment storage using the available device or platform settings.</p>
-<p>The exact steps depend on the device and platform used to access the game. Deleting local data may permanently reset saved progress or scores stored on that device.</p>
+    <main>
+      <section>
+        <h2>1. Architecture & Data Storage Overview</h2>
+        <p><strong>WHO'S THE IMPOSTOR?</strong> is developed by <strong>Questara Interactive</strong>. We prioritize user privacy and client-side efficiency. <strong>We do not maintain external developer servers or databases to store your player profile, scores, or gameplay statistics.</strong></p>
+        <p>Your gameplay scores, round streak counters, settings, and local statistics are stored exclusively on your device within your local browser storage or the Facebook Instant Games environment.</p>
+      </section>
 
-<h2>3. Data Managed by Third-Party Platforms</h2>
-<p>Meta or other third-party services may process information independently under their own policies. The developer cannot directly delete information held independently by those services. Players should use the relevant platform's privacy settings or data-request process for such information.</p>
+      <section>
+        <h2>2. How to Delete Your Local Game Data</h2>
+        <p>Since your progress and statistics are saved locally on your device, you have full authority to delete this data at any time:</p>
+        
+        <div class="warning-box">
+          <strong>Important Notice:</strong>
+          Deleting your local storage will permanently clear your high scores, streak records, and game settings. This action cannot be undone.
+        </div>
 
-<h2>4. Contact</h2>
-<p>If you have questions about data deletion, contact:</p>
-<p><strong>Questara Interactive</strong><br>
-Email: <a href="mailto:questarainteractive@gmail.com">questarainteractive@gmail.com</a></p>
+        <p><strong>Option A: Reset via Game Settings (In-App)</strong></p>
+        <ol>
+          <li>Open <strong>WHO'S THE IMPOSTOR?</strong>.</li>
+          <li>Click or tap the <strong>Settings / Quick Menu</strong> icon on the top right header.</li>
+          <li>Select the <strong>Statistics</strong> tab.</li>
+          <li>Click the <strong>Reset All Stats</strong> button to wipe your local records immediately.</li>
+        </ol>
 
-<footer>
-  &copy; 2026 Questara Interactive. All rights reserved.
-</footer>
+        <p><strong>Option B: Reset via Web Browser Settings</strong></p>
+        <ol>
+          <li>Open your web browser's <strong>Settings</strong> or <strong>Preferences</strong> menu.</li>
+          <li>Navigate to <strong>Privacy &amp; Security</strong> &gt; <strong>Site Settings</strong> or <strong>Clear Browsing Data</strong>.</li>
+          <li>Locate the cached site data for the game domain and clear local storage / cache.</li>
+        </ol>
+      </section>
 
-  </main>
+      <section>
+        <h2>3. Facebook / Meta Platform Data Management</h2>
+        <p>If you play WHO'S THE IMPOSTOR? as a Facebook Instant Game, Meta Platforms, Inc. manages platform-level app connections through your Facebook Account settings. To remove WHO'S THE IMPOSTOR? from your Facebook account:</p>
+        <ol>
+          <li>Log in to your <strong>Facebook Account</strong>.</li>
+          <li>Go to <strong>Settings &amp; Privacy</strong> &gt; <strong>Settings</strong>.</li>
+          <li>In the left sidebar, click <strong>Apps and Websites</strong>.</li>
+          <li>Find <strong>WHO'S THE IMPOSTOR?</strong> under active or expired apps.</li>
+          <li>Click <strong>Remove</strong> to disconnect the game from your Facebook profile and revoke permissions.</li>
+        </ol>
+        <p>For more details on managing platform data stored by Meta, please visit the <a href="https://www.facebook.com/help/2205906963013800" target="_blank" rel="noopener noreferrer">Facebook Help Center - Apps &amp; Websites</a>.</p>
+      </section>
+
+      <section>
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions, require assistance regarding data deletion, or wish to submit an inquiry, please contact Questara Interactive at:</p>
+        <div class="contact-card">
+          <p><strong>Questara Interactive</strong></p>
+          <p>Email: <a href="mailto:questarainteractive@gmail.com">questarainteractive@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Questara Interactive. All rights reserved.</p>
+    </footer>
+  </div>
+
 </body>
 </html>
