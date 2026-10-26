@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy - Who's the Impostor?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #202938;
+      background: #f5f7fb;
+    }
+    main {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+    }
+    h1, h2 { color: #202b46; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p><strong>Game:</strong> Who's the Impostor? </p>
+  <p><strong>Last updated:</strong> October 26, 2026</p>
+
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how this game handles information when you play it.</p>
+
+  <h2>2. Information and Local Storage</h2>
+  <p>The game may store gameplay progress, scores, settings, and preferences in your browser's local storage on your device. This information is used to maintain your game experience and is not automatically sent to our own game server.</p>
+
+  <h2>3. Third-Party Services</h2>
+  <p>This game may be distributed through Facebook or other platforms. Those platforms may process information under their own privacy policies.</p>
+  <p>If advertising, analytics, or other third-party services are introduced, those services may collect or process information according to their own policies. This policy will be updated to describe services actually used by the game.</p>
+
+  <h2>4. Data Sharing</h2>
+  <p>We do not operate a separate game server to collect local gameplay progress. Third-party platforms and services may process information as described in their own privacy policies.</p>
+
+  <h2>5. Data Retention and Deletion</h2>
+  <p>Gameplay data stored locally remains on your device until it is deleted by the game, cleared through your browser or platform settings, or removed when the relevant storage is cleared.</p>
+  <p>For instructions, visit our <a href="data-deletion.html">Data Deletion page</a>.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>The game is intended for the audience indicated by its applicable age rating. We do not knowingly operate a separate server to collect children's personal information. Platform-specific protections and requirements may also apply.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>This policy may be updated when the game's features or data practices change.</p>
+
+  <h2>8. Contact</h2>
+  <p>For privacy questions or data deletion requests, contact the game developer through the contact channel provided on the game's official platform page.</p>
+</main>
+</body>
+</html>
+
